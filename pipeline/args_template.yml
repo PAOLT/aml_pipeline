@@ -1,0 +1,13 @@
+data_prep_folder: data_prep_stage
+data_prep_script: data_prep_entry_script.py
+train_folder: train_stage
+train_script: train_entry_script.py
+tenant: 
+dataset_path: 
+experiment_name: 
+compute: 
+base_environment: 
+conda_packages: 
+pip_packages: 
+conda_channels: 
+local_package_wheel: 

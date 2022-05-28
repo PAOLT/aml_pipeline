@@ -1,0 +1,4 @@
+azureml-sdk
+pyyaml
+pandas
+sklearn
