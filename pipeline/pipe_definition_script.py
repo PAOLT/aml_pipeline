@@ -1,14 +1,9 @@
-import os
 from pathlib import Path
 
 import azureml.core
 import yaml
-from azureml.core import (ComputeTarget, Dataset, Datastore, Environment,
-                          Experiment, ScriptRunConfig, Workspace)
+from azureml.core import Datastore, Environment, Experiment, Workspace
 from azureml.core.authentication import InteractiveLoginAuthentication
-from azureml.core.compute import AmlCompute
-from azureml.core.compute_target import ComputeTargetException
-from azureml.core.conda_dependencies import CondaDependencies
 from azureml.core.runconfig import RunConfiguration
 from azureml.data import OutputFileDatasetConfig
 from azureml.pipeline.core import Pipeline, PipelineParameter

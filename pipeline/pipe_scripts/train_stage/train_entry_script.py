@@ -3,26 +3,26 @@ import argparse
 import pickle
 from pathlib import Path
 
-import pandas as pd
-from sklearn.model_selection import train_test_split
+# import pandas as pd
+# from sklearn.model_selection import train_test_split
 from somemodel.models import SomeModel
 
 
-def train_model(data: pd.DataFrame):
+# def train_model(data: pd.DataFrame):
     
-    X = data.data
-    y = data.target
+#     X = data.data
+#     y = data.target
     
-    # dividing X, y into train and test data
-    X_train, X_test, y_train, y_test = train_test_split(X, y, random_state = 0)
-    model = SomeModel()
-    model.train(X_train, y_train)
-    model.score(X_test, y_test)
-    print("\n*******************")
-    print("Model's results")
-    print(model.get_accuracy())
-    print("*******************\n")
-    return model.get_model()
+#     # dividing X, y into train and test data
+#     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state = 0)
+#     model = SomeModel()
+#     model.train(X_train, y_train)
+#     model.score(X_test, y_test)
+#     print("\n*******************")
+#     print("Model's results")
+#     print(model.get_accuracy())
+#     print("*******************\n")
+#     return model.get_model()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
